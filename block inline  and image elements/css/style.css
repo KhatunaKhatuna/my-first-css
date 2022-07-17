@@ -36,7 +36,17 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .example-block {
 	/* after display: inline, block tag becomes as string (for eg. becpmes as <span>)and cannt use block`s css code */
 	/* display: inline;  */
-	border: 1px solid;
+ 	border: 5px solid #000; 
+	/* border: 5px dotted #000; */
+	/* border: 5px dashed #000; */
+	/* border-left: none;  */
+	/* border-top: 5px dotted red; */
+	/* border-bottom: 5px dashed red; */
+	/* border-left: 5px dashed red; */
+	/* border-right: 5px dotted #000; */
+	/* border-radius: 5px 10px 20px 30px; */
+	border-radius: 10px 0 10px 0;
+
 	/* padding: 10px 200px 30px 5px; */
 	/* padding: 10px 200px 30px; */
 	/* padding: 10px 200px */
@@ -45,7 +55,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 
 	/* margin: 100px; */
-	/* margin: 20px 40px 80px 160px; */
+	 margin: 50px 80px 50px 80px; 
 
 	/* width: 500px; */
 	/* width: 50%; */
@@ -55,9 +65,24 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	 /* height: 300px;  */
 	 /* height: 50%; */
 	/* max-height: 300px; */
-	/* max-height: 50px; */
 	/* min-height: 100px; */
-	margin: 0 0 30px 0;
+	max-height: 100px;
+	overflow: visible;
+	overflow: hidden;
+	overflow:scroll;
+	overflow:auto; 
+
+	box-shadow: 10px 10px 15px 2px, inset 10px 10px 15px 2px #000;
+
+	/* visibility: visible; */
+	/* visibility: hidden; */
+	
+	
+	/* display: none */
+	/* opacity: 0; */
+	/* opacity: 0.4;  */
+	
+	
 }
 
 .example-image {
@@ -66,22 +91,50 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	/* max-width: 500px; */
 	/* min-width: 300px; */
 	/* height: 150px; */
-	max-height: 50px;
-	
+	/* max-height: 50px; */
+
+
+	/* border: 5px solid #000; */
+	/* border: 5px dotted #000; */
+	/* border: 5px dashed #000; */
+	/* border-left: none; */
+	/* border-top: 5px dotted red; */
+	/* border-bottom: 5px dashed red; */
+	/* border-left: 5px dashed red; */
+	/* border-right: 5px dotted #000; */
+
+	/*make photo sircle*/
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+
+	opacity: 0;
+	opacity: 0.5;
+	margin: 0 0 30px 0;
+	 
 }
 
 .example-string {
  /*after display: block, string tag becomes as block and can use all block`s css code*/
-	 display: block;  
-	border: 1px solid;
+	/* display: block;  
+	border: 1px solid; */
+	 outline: 1px solid #000; 
+
 	margin: 0 0 30px 0;
 }
 
-.example-inline-glock {
+.example-inline-block {
  /*after display: inline-block, string tag becomes as block but it have slength of string and can use all block`s css code*/
 	 display: inline-block; 
 	/* display: block; */
 	border: 1px solid;
 	margin: 0 0 30px 0;
+}
+
+.circle {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background-color: blue;
 }
 
