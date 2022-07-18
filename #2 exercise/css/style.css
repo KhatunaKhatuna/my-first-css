@@ -1,0 +1,105 @@
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+body{
+	padding: 30px;
+	
+}
+.list{
+	font-size: 25px;
+	line-height: 30px;
+	margin-bottom: 100px;
+}
+.list li{	
+	background: url(../img/li.svg) left no-repeat;
+	padding: 0 0 0 30px;
+}
+.list li:nth-child(1){
+	text-decoration: line-through;
+}
+.list li:nth-child(1):hover{
+	text-decoration: none;
+}
+.list li:nth-child(2):hover{
+	color: red;
+}
+.list li:nth-child(3){
+	font-style: italic;
+}
+.list li:nth-child(3):hover{
+	font-style: normal;
+}
+.list li:nth-child(4){
+	text-transform: uppercase;
+}
+.list li:nth-child(4):hover{
+	text-transform: lowercase;
+}
+
+.button{
+	margin-bottom: 100px;
+	/* width: 200px;
+	height: 45px; */
+	padding: 20px 80px;
+	font-size: 18px;
+	border-radius: 50px;
+	text-transform: uppercase;
+	background: url("../img/arrow.png") 210px center no-repeat;
+	background-color:rgb(20 184 166);	
+}
+.button:hover{
+	background-color: rgb(15 118 110);
+}
+.button:active{
+	background-color: rgb(68 64 60);
+}
+.textinput{
+	display: block;
+	border: 1px solid rgb(124, 112, 112);
+	height: 50px;
+	width: 300px;
+	font-size: 18px;
+	padding: 10px;
+}
+.textinput:hover{
+	width: 350px;
+	border: 1px solid rgb(184, 152, 226);
+	box-shadow: 0 0 10px rgba(203, 141, 231, 0.5);
+	border-radius: 50px;
+}
+.textinput:focus{
+	border: 1px solid rgb(68, 146, 219);
+	box-shadow: 0 0 10px rgba(21, 123, 170, 0.5);
+}
