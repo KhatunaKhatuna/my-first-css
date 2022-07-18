@@ -95,6 +95,9 @@ img{
 .underlined{
 	text-decoration: line-through;
 }
+button:hover{
+	background-color: darkturquoise;
+}
 .button {
 	margin-bottom: 80px; 
 	font-size: 20px;
