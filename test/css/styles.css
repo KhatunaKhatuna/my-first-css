@@ -1,0 +1,14 @@
+.block{
+display: flex;
+
+}
+
+
+.block__colum{
+
+}
+
+.block-item{
+	font-size: 30px;
+	border: 10px solid #000;
+}

@@ -68,9 +68,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	/* min-height: 100px; */
 	max-height: 100px;
 	overflow: visible;
-	overflow: hidden;
-	overflow:scroll;
-	overflow:auto; 
+	 overflow: hidden;
+	 overflow:scroll;
+	/* overflow:auto;  */
 
 	box-shadow: 10px 10px 15px 2px, inset 10px 10px 15px 2px #000;
 
