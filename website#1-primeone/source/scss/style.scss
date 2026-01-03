@@ -1,0 +1,28 @@
+//<mixin>
+
+//</mixin>
+@import "reset.scss";
+
+//<fonts>
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+//</fonts>
+
+//<шрифт по Умалчанию>
+$fontfamily: "PT Sans";
+//</шрифт по Умалчанию>
+
+//<variables>
+$minwidth:320px;
+$mw:880px;
+$md1:$mw+12;
+$md2:992.98;
+$md3:767.98;
+$md4:479.98;
+//</variables>
+
+.container{
+	max-width: $mw; margin: 0 auto; width: 100%;
+	
+}

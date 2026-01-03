@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>FORM</title>
+</head>
+<body>
+	<form action="#" method="get" enctype="multipart/form-data">
+		<div>
+			<p>Name</p>
+			<input tabindex="1" placeholder="name"  name="username" value="" type="text">
+		</div>
+		<div>
+			<p>Password</p>
+			<input tabindex="2" placeholder="userpass" name="userpass" value="" type="password">
+		</div>
+		<div>
+			<p>Telephone</p>
+			<input tabindex="3" name="userphone" value="+995" type="tel">
+		</div>
+		<div>
+			<p>Gender</p>
+			<div><input checked tabindex="4" name="gender" value="male" type="radio"> male </div>
+			<div><input tabindex="4" name="gender" value="female" type="radio"> female </div>
+		</div>
+		<div>
+			<p>Vehicles</p>
+			<div><input tabindex="5" checked type="checkbox" name="car" value ="yes"> car</div>
+			<div><input tabindex="6" type="checkbox" name="bike" value ="yes"> bike</div>
+			<div><input tabindex="7" disabled type="checkbox" name="bus" value ="yes"> bus</div>
+		</div>
+		<div>
+			<p>About Information</p>
+			<textarea tabindex="8" name="text"></textarea>
+		</div>
+		<div>
+			<p>Photo</p>
+			<input tabindex="9" type="file" value="upload">
+		</div>
+		<div>
+			<p>Favorit colour</p>
+			<select tabindex="10" name="color" id="">
+				<option value="red">Red</option>
+				<option value="green">Green</option>
+				<option value="blue">Blue</option>
+			</select>
+		</div>
+		<div>
+			<button type="submit">Submit</button>
+			<button type="reset">Reset</button>
+		</div>
+	</form>
+</body>
+</html>

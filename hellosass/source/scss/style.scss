@@ -1,0 +1,64 @@
+//includ font family
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+
+// includ enother scss file. In this case reset.scss
+@import "reset.scss";
+
+$fz:40px;          //variable
+$color_1:red;
+
+//to use template we should @extend % where necessary
+%tlborder{
+ border-bottom: 5px dashed red;
+ font-size: 50px;
+}
+
+//to includ mixin where necessary use 	 @include ctile(80px,red);
+//and can change font size and color
+@mixin ctile($f,$c){
+	font-size: ($f);
+	color: ($c);
+}
+
+.block{
+	width:300px/960px*100%; //can count percent
+	background-color: #666;
+	padding: 30px;
+	font-size: 30px;
+	line-height: 60px;
+	>p{
+		color: $color_1;
+	}
+	.block__text{
+		font-size: $fz; 
+		span{
+			 @include ctile(80px,red);
+		}
+	}
+}
+
+.link{
+	color: blue;
+	&:hover{  //& იწერება მშობლის მაგივრად
+		color: green;
+	}
+	@extend %tlborder;
+	.block &{   //ანუ ეს ჩანაწერი ნიშნავს ბლოკის ყველა ლინკი რადგან ვდგავარ ლინკის ქვეშ
+		color: purple;
+	}
+}
+.text{
+	font-family: "PT Sans";
+	margin-top: 30px;
+	font-size: 30px;
+	line-height: 35px;
+	p{margin-bottom: 30px;}
+}
+.text-test{
+	font-family: "Square Peg";
+	margin-top: 30px;
+	font-size: 30px;
+	line-height: 35px;
+	p{margin-bottom: 30px;}
+}

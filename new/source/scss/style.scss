@@ -1,0 +1,23 @@
+//<mixin>
+
+//</mixin>
+
+@import "reset.scss";
+
+//<fonts> all times changeable
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+//</fonts>
+
+//<шрифт по Умалчанию> all times changeable
+$fontfamily: "PT Sans";
+//</шрифт по Умалчанию>
+
+//<variables> all times changeable ?????? 
+$minwidth:320px;
+$mw:1170px;
+$md1:$mw+12;
+$md2:992.98;
+$md3:767.98;
+$md4:479.98;
+//</variables>

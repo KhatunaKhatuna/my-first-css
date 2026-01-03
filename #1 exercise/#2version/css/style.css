@@ -95,7 +95,7 @@ body {
   margin: 0 0 65px 0;
 }
 .content-top__category {
-	/* if delete opacity text color wil changte if you'd like to have same color without opacity
+	/* if delete opacity text color will change if you'd like to have same color without opacity
 	* shoud take real color from macket and then opacity is not necessary
 	*/
   opacity: 0, 6;
@@ -188,7 +188,7 @@ body {
 	opacity: 0.3;
 }
 .content-bottom-info-link {
-	/* this is iline tag so we should change it in inline-block
+	/* this is inline tag so we should change it in inline-block
 	*  to use stiles of blocks too
 	*/
 	display: inline-block;

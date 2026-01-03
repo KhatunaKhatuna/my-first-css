@@ -1,0 +1,24 @@
+//<mixin>
+@mixin anim($time,$delay){-webkit-transition: all $time ease $delay; -moz-transition: all $time ease $delay; -o-transition: all $time ease $delay;}//-ms-transition: all $time ease $delay;}
+@mixin flexbox(){display:-webkit-box;display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex;font-size: 0;}
+//</mixin>
+
+//<fonts> all times changeable
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+//</fonts>
+
+//<шрифт по Умалчанию> all times changeable
+$fontfamily: "PT Sans";
+//</шрифт по Умалчанию>
+
+//<variables> all times changeable ?????? 
+$minwidth:320px;
+$mw:1170;
+$md1:$mw+12;
+$md2:992.98;
+$md3:767.98;
+$md4:479.98;
+//</variables>
+
+@import "reset.scss";
